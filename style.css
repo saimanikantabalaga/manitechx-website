@@ -1,0 +1,158 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #020617;
+    color: white;
+    text-align: center;
+  }
+  
+  header {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+  }
+  
+  section {
+    padding: 80px 20px;
+  }
+  
+  h1 {
+    font-size: 42px;
+    background: linear-gradient(90deg, #22c55e, #38bdf8);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  p {
+    color: #94a3b8;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #22c55e, #38bdf8);
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #22c55e;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #38bdf8;
+  }
+  
+  .card {
+    background: rgba(255,255,255,0.05);
+    margin: 20px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(56,189,248,0.3);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #38bdf8;
+  }
+
+  /* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    background: rgba(2, 6, 23, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  /* Hover underline glow */
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #38bdf8;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #38bdf8;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .reels-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .reel-card {
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(56,189,248,0.3);
+    transition: 0.3s;
+  }
+  
+  .reel-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .reel-card p {
+    padding: 10px;
+  }
+  
+  .reel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #38bdf8;
+  }
