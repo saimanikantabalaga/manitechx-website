@@ -191,4 +191,14 @@ section {
   color: black;
   cursor: pointer;
 }
+h1, h2 {
+  letter-spacing: 1px;
+}
 
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 18px;
+}
